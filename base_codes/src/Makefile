@@ -9,7 +9,7 @@ INCFLAG = -I "../common/"
 all: $(P1)
 
 $(P1): $(P1).cpp
-	$(CPP) $(INCFLAG) $(CFLAGS) $(OMPFLAG) $(P1).cpp -o $(P1) -lglut -lGL
+    $(CPP) $(INCFLAG) $(CFLAGS) $(OMPFLAG) $(P1).cpp -o $(P1) -L C:\MinGW\bin -lglut -lopengl32
 
 clean:
-	rm -vf $(P1)
+    rm -vf $(P1)
